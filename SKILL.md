@@ -21,6 +21,8 @@ Do not use this skill for the separate `ha` command-line tool unless the user sp
 ## Safety
 
 - Never print or expose `HASS_TOKEN`, `HASS_SUPERVISOR_TOKEN`, `HASS_PASSWORD`, long-lived access tokens, or API keys.
+- Do not read, print, dump, or expose environment variables. Avoid commands such as `env`, `printenv`, `export`, `set`, `declare`, or `echo $HASS_TOKEN`. Never inspect token values directly.
+- When checking Home Assistant access, run `hass-cli` commands and report success or sanitized errors. If authentication appears missing, ask the user to confirm that `HASS_SERVER`, `HASS_TOKEN`, or `HASS_SUPERVISOR_TOKEN` are set without revealing their values.
 - Prefer read-only discovery commands before making changes.
 - Ask for confirmation before commands that change state, call services, update/delete areas, assign devices, create backups, update Home Assistant Core, or use `raw` endpoints with non-GET behavior.
 - Avoid `--insecure` unless the user explicitly accepts connecting with ignored TLS certificate validation.
