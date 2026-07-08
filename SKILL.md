@@ -1,5 +1,5 @@
 ---
-name: hass-cli-skills
+name: hass-cli
 description: Use when working with the Home Assistant CLI (`hass-cli`) to inspect, automate, or administer Home Assistant from the command line.
 license: MIT
 metadata:

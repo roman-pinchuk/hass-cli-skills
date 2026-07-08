@@ -8,7 +8,7 @@ The skill guides agents through safe Home Assistant command-line workflows: insp
 
 ## Available Skill
 
-### hass-cli-skills
+### hass-cli
 
 Use when working with the Home Assistant CLI (`hass-cli`) to inspect, automate, or administer Home Assistant from the command line.
 
@@ -37,6 +37,12 @@ If your agent setup supports `skills`, install directly from GitHub:
 
 ```bash
 npx skills add roman-pinchuk/hass-cli-skills
+```
+
+To install only this skill explicitly:
+
+```bash
+npx skills add roman-pinchuk/hass-cli-skills --skill hass-cli
 ```
 
 ### opencode

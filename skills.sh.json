@@ -5,7 +5,7 @@
     {
       "title": "Home Assistant",
       "description": "Skills for inspecting, automating, and administering Home Assistant from the command line.",
-      "skills": ["hass-cli-skills"]
+      "skills": ["hass-cli"]
     }
   ]
 }
