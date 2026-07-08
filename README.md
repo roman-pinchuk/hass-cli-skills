@@ -1,5 +1,7 @@
 # Home Assistant CLI Skill
 
+[![skills.sh](https://skills.sh/b/roman-pinchuk/hass-cli-skills)](https://skills.sh/roman-pinchuk/hass-cli-skills)
+
 An opencode-compatible `SKILL.md` for working with the Home Assistant CLI (`hass-cli`).
 
 This skill follows the [Agent Skills](https://agentskills.io/) format.
