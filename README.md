@@ -90,6 +90,8 @@ export HASS_TOKEN=<long-lived-access-token>
 
 For Home Assistant Operating System supervisor commands, `HASS_SUPERVISOR_TOKEN` may also be required.
 
+If Home Assistant is behind a reverse proxy with extra authentication, such as Pangolin, Cloudflared, or a similar access gateway, configure a bypass rule that allows unauthenticated access specifically for the `/api/*` and `/auth/*` paths. `hass-cli` still authenticates to Home Assistant with its Home Assistant token, but proxy-level auth on those paths can block CLI/API access.
+
 ## Safety Model
 
 The skill tells agents to:
